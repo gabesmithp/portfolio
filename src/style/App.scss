@@ -1,11 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
 
 $background-color: #F6F4F2;
 $black: #0F0F0F;
 $highlight: #EA631F;
 $border: 2px solid black;
+$mono-font: 'Roboto Mono', monospace;
+$sans-font: 'Titillium Web', sans-serif;
+
+@mixin center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+html {
+  font-size: 10px;
+}
 
 body {
   margin: 0;
   background-color: $background-color;
   border: $border;
+  color: $black;
+  font-family: $sans-font;
+}
+
+header {
+  @include center;
+  border-bottom: $border;
+  font-family: $mono-font;
+  font-weight: 300;
+}
+
+header h2 {
+  margin: .75em;
+}
+
+.description {
+  @include center;
+}
+
+.description h3 {
+  width: 13em;
+  margin-top: 6em;
+  margin-bottom: 6em;
+}
+
+.description span {
+  color: $highlight;
 }
