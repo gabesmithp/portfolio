@@ -1,7 +1,11 @@
 
 $background-color: #F6F4F2;
+$black: #0F0F0F;
+$highlight: #EA631F;
+$border: 2px solid black;
 
 body {
   margin: 0;
   background-color: $background-color;
+  border: $border;
 }
